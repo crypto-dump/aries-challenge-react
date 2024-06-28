@@ -13,7 +13,7 @@ const OptionItem = ({ option, onUpdate, onRemove }: OptionItemProps) => {
 
   useEffect(() => {
     onUpdate(localOption);
-  }, [localOption, onUpdate]);
+  }, [localOption]);
 
   const handleChange = (field: string, value: any) => {
     setLocalOption({ ...localOption, [field]: value });
